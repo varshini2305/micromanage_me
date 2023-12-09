@@ -1,0 +1,12 @@
+// host.json
+
+{
+    "name": "host_command",
+    "description": "Command host for starting Flask server",
+    "path": "app.js",
+    "type": "stdio",
+    "allowed_origins": [
+      "chrome-extension://pjngodichcbnjlkndbbpknecadbkjbkj/"
+    ]    
+  }
+  

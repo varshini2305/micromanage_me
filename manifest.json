@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Micromanager",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+    // Remove the "scripts" key
+  },
+  "permissions": [
+    "nativeMessaging",
+    "webNavigation",
+    "debugger",
+    "storage"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "externally_connectable": {
+    "matches": ["*://localhost/*"], 
+    "accepts_tls_channel_id": false,
+    "host_command": "run_script"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

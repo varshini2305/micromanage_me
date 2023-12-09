@@ -1,0 +1,4 @@
+Flask==3.0.0
+flask_cors==4.0.0
+pywebview==4.3.3
+selenium==4.14.0
