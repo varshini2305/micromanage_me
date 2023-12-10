@@ -4,11 +4,11 @@
   "version": "1.0",
   "background": {
     "service_worker": "background.js"
-    // Remove the "scripts" key
   },
   "permissions": [
-    "nativeMessaging",
-    "webNavigation",
+    // "nativeMessaging",
+    // "webNavigation",
+    "activeTab",
     "debugger",
     "storage"
   ],
